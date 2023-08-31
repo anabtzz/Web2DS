@@ -12,36 +12,36 @@ namespace Web2DS.Models
     {
         [Display(Name = "Nome do Cliente")]
         [Required(ErrorMessage = "Este campo é de preenchimento obrigatorio")]
-        private string Nome { get; set; }
+        public string Nome { get; set; }
 
         [Display(Name = "Codigo do Cliente")]
         [Required(ErrorMessage = "Este campo é de preenchimento obrigatório")]
-        private int Cod { get; set; }
+        public int Cod { get; set; }
 
         [Display(Name = "Endereço")]
         [Required(ErrorMessage = "Este campo é de preenchimento obrigatório")]
-        private string Endereco { get; set; }
+        public string Endereco { get; set; }
 
         [Display(Name = "Telefone")]
         [StringLength(11)]
         [Required(ErrorMessage = "Este campo é de preenchimento obrigatório")]
         [DisplayFormat(DataFormatString = "(XX) XXXXX-XXXX")]
-        private string telefone { get; set; }
+        public string telefone { get; set; }
 
         [Display(Name = "Email do Cliente")]
         [Required(ErrorMessage = "Este campo é de preenchimento obrigatório")]
         [RegularExpression(@"\w + ([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*", ErrorMessage = "Informe email válido")]
-        private string email { get; set; }
+        public string email { get; set; }
 
         [Display(Name = "CPF")]
         [StringLength(11)]
         [Required(ErrorMessage = "Este campo é de preenchimento obrigatório")]
         [DisplayFormat(DataFormatString = "XXXXXXXXXX-XX")]
-        private string cpf { get; set; }
+        public string cpf { get; set; }
 
         [Display(Name = "Data de Nascimento")]
         [DisplayFormat(DataFormatString = "0:dd/mm/yyyy")]
-        private DateTime nascimento { get; set; }
+        public DateTime nascimento { get; set; }
 
        
     }
